@@ -6,6 +6,7 @@ module.exports = {
   // title: 'Hello VuePress',
   // description: 'Just for fun',
   themeConfig: {
+    lastUpdated: '更新时间',
     nav: nav,
   },
   markdown: {

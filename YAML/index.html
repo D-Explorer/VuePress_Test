@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>YAML 基本知识</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    
+    <meta name="description" content="">
+    <link rel="preload" href="/assets/css/0.styles.6985921b.css" as="style"><link rel="preload" href="/assets/js/app.5e30dbef.js" as="script"><link rel="preload" href="/assets/js/4.6c949e37.js" as="script"><link rel="preload" href="/assets/js/2.d39deaf9.js" as="script"><link rel="preload" href="/assets/js/7.84621562.js" as="script"><link rel="prefetch" href="/assets/js/10.7a26e493.js"><link rel="prefetch" href="/assets/js/3.cdbf5ea5.js"><link rel="prefetch" href="/assets/js/5.082e7ec9.js"><link rel="prefetch" href="/assets/js/6.324013fa.js"><link rel="prefetch" href="/assets/js/8.c34d80b3.js"><link rel="prefetch" href="/assets/js/9.6812702d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6985921b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  Guide
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  Guide
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>YAML</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/YAML/" aria-current="page" class="active sidebar-link">YAML 基本知识</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/YAML/#一、基本规则" class="sidebar-link">一、基本规则</a></li><li class="sidebar-sub-header"><a href="/YAML/#二、对象" class="sidebar-link">二、对象</a></li><li class="sidebar-sub-header"><a href="/YAML/#三、数组" class="sidebar-link">三、数组</a></li><li class="sidebar-sub-header"><a href="/YAML/#四、复合结构" class="sidebar-link">四、复合结构</a></li><li class="sidebar-sub-header"><a href="/YAML/#五、纯量" class="sidebar-link">五、纯量</a></li><li class="sidebar-sub-header"><a href="/YAML/#六、字符串" class="sidebar-link">六、字符串</a></li><li class="sidebar-sub-header"><a href="/YAML/#七、引用" class="sidebar-link">七、引用</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="yaml-基本知识"><a href="#yaml-基本知识" class="header-anchor">#</a> YAML 基本知识</h1> <h2 id="一、基本规则"><a href="#一、基本规则" class="header-anchor">#</a> 一、基本规则</h2> <p>YAML 基本语法规则如下：</p> <blockquote><ul><li>大小写敏感</li> <li>使用缩进表示层级广西</li> <li>缩进时不允许使用 tab 键，自允许使用空格</li> <li>缩进的空格数目不重要，只要相同层级的元素对齐即可</li></ul></blockquote> <p><code>#</code> 表示注释，从这个字符一直到行位，都会被解析器忽略</p> <p>YAML 支持的数据结构有三种：</p> <blockquote><ul><li>对象：键值对的集合，又称为映射（mapping）/哈希（hashes）/字典（dictionary）</li> <li>数组：医嘱按次序排列的值，又称为序列（sequence)/列表（list）</li> <li>纯量（scalars）：单个的、不可再分割的值</li></ul></blockquote> <hr> <h2 id="二、对象"><a href="#二、对象" class="header-anchor">#</a> 二、对象</h2> <p>对象的一组键值对，使用冒号结构表示：</p> <div class="language-YAML extra-class"><pre class="language-yaml"><code>animal<span class="token punctuation">:</span>pert
+</code></pre></div><p>YAML 也允许另一种写法，将所有将只对写成一个行内对象：</p> <div class="language-YAML extra-class"><pre class="language-yaml"><code><span class="token punctuation">{</span>hash<span class="token punctuation">:</span><span class="token punctuation">{</span>name<span class="token punctuation">:</span><span class="token string">'Steve'</span><span class="token punctuation">,</span> foo<span class="token punctuation">:</span><span class="token string">'bar'</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+</code></pre></div><hr> <h2 id="三、数组"><a href="#三、数组" class="header-anchor">#</a> 三、数组</h2> <p>一组连词线开头的行，构成一个数组：</p> <div class="language-YAML extra-class"><pre class="language-yaml"><code><span class="token punctuation">-</span> Cat
+<span class="token punctuation">-</span> Dog
+<span class="token punctuation">-</span> Goldfish
+</code></pre></div><p>数据结构的子成员是一个数组，则可以在该项相面缩进一个空格：</p> <div class="language-YAML extra-class"><pre class="language-yaml"><code><span class="token punctuation">-</span>
+ <span class="token punctuation">-</span> Cat
+ <span class="token punctuation">-</span> Dog
+ <span class="token punctuation">-</span> Goldfish
+</code></pre></div><p>数组也可以采用行内表示法：</p> <div class="language-YAML extra-class"><pre class="language-yaml"><code><span class="token punctuation">{</span>animal<span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token string">'Cat'</span><span class="token punctuation">,</span> <span class="token string">'Dog'</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+</code></pre></div><hr> <h2 id="四、复合结构"><a href="#四、复合结构" class="header-anchor">#</a> 四、复合结构</h2> <p>对象和数组可以结合使用，形成复合结构：</p> <div class="language-YAML extra-class"><pre class="language-yaml"><code><span class="token key atrule">languages</span><span class="token punctuation">:</span>
+ <span class="token punctuation">-</span> Ruby
+ <span class="token punctuation">-</span> Perl
+ <span class="token punctuation">-</span> Python
+<span class="token key atrule">websites</span><span class="token punctuation">:</span>
+ <span class="token key atrule">YAML</span><span class="token punctuation">:</span> yaml.org
+ <span class="token key atrule">Ruby</span><span class="token punctuation">:</span> ruby<span class="token punctuation">-</span>lang.org
+ <span class="token key atrule">Python</span><span class="token punctuation">:</span> python.org
+ <span class="token key atrule">Perl</span><span class="token punctuation">:</span> use.perl.org
+</code></pre></div><hr> <h2 id="五、纯量"><a href="#五、纯量" class="header-anchor">#</a> 五、纯量</h2> <p>纯量是最基本的、不可再分的值。以下数据类型都属于 JavaScript 的纯量：</p> <blockquote><ul><li>布尔值</li> <li>整数</li> <li>浮点数</li> <li>Null</li> <li>时间</li> <li>日期</li></ul></blockquote> <p>数值直接以自恋量的形式表示：</p> <div class="language-YAML extra-class"><pre class="language-yaml"><code>number<span class="token punctuation">:</span><span class="token number">12.30</span>
+</code></pre></div><p>布尔值用<code>true</code>和<code>false</code>表示：</p> <div class="language-YAML extra-class"><pre class="language-yaml"><code>isTrue<span class="token punctuation">:</span><span class="token boolean important">true</span>
+</code></pre></div><p><code>null</code>用<code>~</code>表示</p> <div class="language-YAML extra-class"><pre class="language-yaml"><code>parent<span class="token punctuation">:</span><span class="token null important">~</span>
+</code></pre></div><p>时间采用 ISO8601 格式</p> <div class="language-YAML extra-class"><pre class="language-yaml"><code><span class="token key atrule">iso8601</span><span class="token punctuation">:</span> <span class="token datetime number">2001-12-14t21:59:43.10-05:00</span>
+</code></pre></div><p>YAML 允许使用两个感叹号，强制类型转换</p> <div class="language-YAML extra-class"><pre class="language-yaml"><code><span class="token key atrule">e</span><span class="token punctuation">:</span> <span class="token tag">!!str</span> <span class="token number">123</span>
+<span class="token key atrule">f</span><span class="token punctuation">:</span> <span class="token tag">!!str</span> <span class="token boolean important">true</span>
+</code></pre></div><hr> <h2 id="六、字符串"><a href="#六、字符串" class="header-anchor">#</a> 六、字符串</h2> <p>字符串时最常见，也是最复杂的一种数据类型。
+字符串默认不使用引号表示</p> <div class="language-YAML extra-class"><pre class="language-yaml"><code><span class="token key atrule">str</span><span class="token punctuation">:</span> This is a string
+</code></pre></div><p>如果字符串之中包含空格或特殊字符，需要放在引号之中：</p> <div class="language-YAML extra-class"><pre class="language-yaml"><code><span class="token key atrule">str</span><span class="token punctuation">:</span> <span class="token string">'内容： 字符串'</span>
+</code></pre></div><p>单引号和双引号都可以使用，双引号不会对特殊字符转义。</p> <div class="language-YAML extra-class"><pre class="language-yaml"><code><span class="token key atrule">s1</span><span class="token punctuation">:</span> <span class="token string">'内容\n字符串'</span>
+<span class="token key atrule">s2</span><span class="token punctuation">:</span> <span class="token string">&quot;内容\n字符串&quot;</span>
+</code></pre></div><p>单引号之中如果还有单引号，必须连续使用两个单引号转义。</p> <div class="language-YAML extra-class"><pre class="language-yaml"><code><span class="token key atrule">str</span><span class="token punctuation">:</span> 'labor''s day'
+</code></pre></div><p>字符串可以写成多行，从第二行开始，必须有一个单空格缩进。换行符会被转为空格。</p> <div class="language-YAML extra-class"><pre class="language-yaml"><code><span class="token key atrule">str</span><span class="token punctuation">:</span> 这是一段
+  多行
+  字符串
+</code></pre></div><p>多行字符串可以使用<code>|</code>保留换行符，也可以使用<code>&gt;</code>折叠换行。</p> <div class="language-YAML extra-class"><pre class="language-yaml"><code><span class="token key atrule">this</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+  Foo
+  Bar</span>
+<span class="token key atrule">that</span><span class="token punctuation">:</span> <span class="token punctuation">&gt;</span><span class="token scalar string">
+  Foo
+  Bar</span>
+</code></pre></div><p><code>+</code>表示保留文字块末尾的换行，<code>-</code>表示删除字符串末尾的换行。</p> <div class="language-YAML extra-class"><pre class="language-yaml"><code><span class="token key atrule">s1</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+  Foo</span>
+
+<span class="token key atrule">s2</span><span class="token punctuation">:</span> <span class="token punctuation">|</span>+
+  Foo
+
+
+<span class="token key atrule">s3</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token punctuation">-</span>
+  Foo
+</code></pre></div><p>字符串之中可以插入 HTML 标记</p> <div class="language-YAML extra-class"><pre class="language-yaml"><code><span class="token key atrule">message</span><span class="token punctuation">:</span> <span class="token punctuation">|</span>
+
+  &lt;p style=&quot;color<span class="token punctuation">:</span> red&quot;<span class="token punctuation">&gt;</span>
+    段落
+  &lt;/p<span class="token punctuation">&gt;</span>
+</code></pre></div><hr> <h2 id="七、引用"><a href="#七、引用" class="header-anchor">#</a> 七、引用</h2> <p>锚点<code>&amp;</code>和别名<code>*</code>，可以用来引用</p> <div class="language-YAML extra-class"><pre class="language-yaml"><code><span class="token key atrule">defaults</span><span class="token punctuation">:</span> <span class="token important">&amp;defaults</span>
+  <span class="token key atrule">adapter</span><span class="token punctuation">:</span>  postgres
+  <span class="token key atrule">host</span><span class="token punctuation">:</span>     localhost
+
+<span class="token key atrule">development</span><span class="token punctuation">:</span>
+  <span class="token key atrule">database</span><span class="token punctuation">:</span> myapp_development
+  <span class="token key atrule">&lt;&lt;</span><span class="token punctuation">:</span> <span class="token important">*defaults</span>
+
+<span class="token key atrule">test</span><span class="token punctuation">:</span>
+  <span class="token key atrule">database</span><span class="token punctuation">:</span> myapp_test
+  <span class="token key atrule">&lt;&lt;</span><span class="token punctuation">:</span> <span class="token important">*defaults</span>
+</code></pre></div><p><code>&amp;</code>用来建立锚点（<code>defaults</code>），<code>&lt;&lt;</code>表示合并到当前数据，<code>*</code>用来引用锚点。</p> <p>下面是另一个例子。</p> <div class="language-YAML extra-class"><pre class="language-yaml"><code><span class="token punctuation">-</span> <span class="token important">&amp;showell</span> Steve
+<span class="token punctuation">-</span> Clark
+<span class="token punctuation">-</span> Brian
+<span class="token punctuation">-</span> Oren
+<span class="token punctuation">-</span> <span class="token important">*showell</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新时间:</span> <span class="time">2020年9月27日星期日凌晨12点06分</span></div></footer> <!---->  <!----></main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.5e30dbef.js" defer></script><script src="/assets/js/4.6c949e37.js" defer></script><script src="/assets/js/2.d39deaf9.js" defer></script><script src="/assets/js/7.84621562.js" defer></script>
+  </body>
+</html>

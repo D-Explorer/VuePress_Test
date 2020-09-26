@@ -5,7 +5,7 @@ module.exports = {
 
   nav: [
     { text: 'Home', link: '/' },
-    { text: 'VuePress', link: '/Vuepress' },
+    { text: 'Guide', link: '/guide/' },
     // { text: 'Home', link: '/' },
     // { text: 'Home', link: '/' },
   ],

@@ -4,9 +4,6 @@ const pluginsConf = require('./config/pluginsConf')
 const themeConf = require('./config/themeConf')
 
 module.exports = {
-  //base: '/VuePress_Test/', //用于与生成github page页面
-  // title: 'Hello VuePress',
-  // description: 'Just for fun',
   themeConfig: themeConf,
   plugins: pluginsConf,
 }

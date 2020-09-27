@@ -1,5 +1,6 @@
 ---
 home: true #这里打开主页
+title: morethink
 # heroImage: /hero.png
 heroText: 起不了床的夜猫子的个人博客
 tagline: 学点酷酷的东西
